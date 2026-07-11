@@ -26,9 +26,11 @@ Given a text description of a product, it predicts:
 {
   "description": "Red lace sleeveless mini party dress"
 }
+```
+---
 
-# output
-
+---
+# output:
 {
   "attributes": {
     "silhouette": "A-line",
@@ -41,3 +43,4 @@ Given a text description of a product, it predicts:
     "category": "party"
   }
 }
+---
