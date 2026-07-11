@@ -6,6 +6,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 
+
 # Load dataset
 df = pd.read_csv("dataset.csv")
 
@@ -35,9 +36,10 @@ y_pred = model.predict(X_test_vec)
 # Evaluation
 print(" Attribute-wise Evaluation:\n")
 
+
 for i, column in enumerate(y.columns):
     print(f"\n {column.upper()}:\n")
-    print(classification_report(y_test.iloc[:, i], y_pred[:, i]))
+    print(classification_report(y_test.iloc[:, i], y_pred[:, i], zero_division=0))
 
 # Save
 with open("model.pkl", "wb") as f:
