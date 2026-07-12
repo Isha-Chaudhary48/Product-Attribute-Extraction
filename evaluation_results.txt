@@ -1,0 +1,14 @@
+Attribute-wise Evaluation
+=========================
+
+silhouette: accuracy=0.650, macro_f1=0.508
+fabric: accuracy=0.700, macro_f1=0.602
+neckline: accuracy=0.550, macro_f1=0.307
+sleeve: accuracy=0.700, macro_f1=0.411
+length: accuracy=0.750, macro_f1=0.716
+embellishment: accuracy=0.800, macro_f1=0.314
+color: accuracy=0.550, macro_f1=0.469
+category: accuracy=0.550, macro_f1=0.461
+
+Overall average accuracy: 0.656
+Overall macro-averaged F1 score: 0.473
